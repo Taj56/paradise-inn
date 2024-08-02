@@ -14,6 +14,9 @@ export default {
         'fourth': '#2E4F4F',
       }
     },
+    fontFamily: {
+      'mako': ['Mako', 'sans-serif']
+    }
   },
   plugins: [],
 }
