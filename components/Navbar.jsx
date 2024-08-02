@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './styles/navStyle.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,15 +27,15 @@ const Navbar = () => {
     <div className='w-full h-[80px] bg-white flex justify-center items-center py-5'>
         <img src="src\assets\logo.png" style={{width: '200px', height: '60px'}} alt="" />
     </div>
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-gray-800 p-1">
       <div className="container mx-auto flex justify-between items-center">
         {/* <div className="text-white text-2xl">Brand</div> */}
         <div className="hidden md:flex space-x-4 justify-evenly items-center w-[100%] md:text-2xl font-mako">
-          <a href="#" className="text-white hover:bg-gray-700 p-2 rounded">Home</a>
-          <a href="#" className="text-white hover:bg-gray-700 p-2 rounded">Luxury Rooms</a>
-          <a href="#" className="text-white hover:bg-gray-700 p-2 rounded">Things to Do</a>
-          <a href="#" className="text-white hover:bg-gray-700 p-2 rounded">About Us</a>
-          <a href="#" className="text-white hover:bg-gray-700 p-2 rounded">Find Us</a>
+          <Link to="#" className="text-white hover:bg-gray-700 p-2 rounded">Home</Link>
+          <Link to="#" className="text-white hover:bg-gray-700 p-2 rounded">Luxury Rooms</Link>
+          <Link to="#" className="text-white hover:bg-gray-700 p-2 rounded">Things to Do</Link>
+          <Link to="#" className="text-white hover:bg-gray-700 p-2 rounded">About Us</Link>
+          <Link to="#" className="text-white hover:bg-gray-700 p-2 rounded">Find Us</Link>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -54,11 +55,11 @@ const Navbar = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
                 </button>
-                <a href="#" className="text-white text-3xl hover:bg-gray-700 p-2 rounded" onClick={closeMenu}>Home</a>
-                <a href="#" className="text-white text-3xl hover:bg-gray-700 p-2 rounded" onClick={closeMenu}>Luxury Rooms</a>
-                <a href="#" className="text-white text-3xl hover:bg-gray-700 p-2 rounded" onClick={closeMenu}>Things to Do</a>
-                <a href="#" className="text-white text-3xl hover:bg-gray-700 p-2 rounded" onClick={closeMenu}>About Us</a>
-                <a href="#" className="text-white text-3xl hover:bg-gray-700 p-2 rounded" onClick={closeMenu}>Find Us</a>
+                <Link to="#" className="text-white text-3xl hover:bg-gray-700 p-2 rounded" onClick={closeMenu}>Home</Link>
+                <Link to="#" className="text-white text-3xl hover:bg-gray-700 p-2 rounded" onClick={closeMenu}>Luxury Rooms</Link>
+                <Link to="#" className="text-white text-3xl hover:bg-gray-700 p-2 rounded" onClick={closeMenu}>Things to Do</Link>
+                <Link to="#" className="text-white text-3xl hover:bg-gray-700 p-2 rounded" onClick={closeMenu}>About Us</Link>
+                <Link to="#" className="text-white text-3xl hover:bg-gray-700 p-2 rounded" onClick={closeMenu}>Find Us</Link>
             </div>
         </div>
       )}
