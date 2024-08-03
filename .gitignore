@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+components/ui/Card.jsx
+components/QuickLinks.jsx

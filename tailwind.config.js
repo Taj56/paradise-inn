@@ -16,6 +16,9 @@ export default {
     },
     fontFamily: {
       'mako': ['Mako', 'sans-serif']
+    },
+    backgroundImage: {
+      'hero': "url('/src/assets/home_img/hero_img.png')",
     }
   },
   plugins: [],
