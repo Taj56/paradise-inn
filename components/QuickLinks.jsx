@@ -1,3 +1,10 @@
+/**
+ * Renders a section containing three Cards, each displaying an image and a title.
+ *
+ * @return {JSX.Element} A section element containing three Card components.
+ */
+
+
 import Card from "./ui/Card";
 
 const roomsCardGB = "src/assets/home_img/rooms_card.png";
